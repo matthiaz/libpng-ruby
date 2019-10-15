@@ -824,7 +824,7 @@ set_read_context(png_decoder_t* ptr, VALUE data)
       png_destroy_read_struct(&ctx, &fsi, &bsi);
     }
 
-    RUNTIME_ERROR(err);
+    RUNTIME_ERROR("err");
   }
 }
 
